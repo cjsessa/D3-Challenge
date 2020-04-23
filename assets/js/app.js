@@ -23,7 +23,7 @@ var svg = d3.select("#scatter")
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-d3.csv("../assets/data/data.csv").then(function(data){
+d3.csv("./assets/data/data.csv").then(function(data){
 
   // got help from stack overflow answer
   // https://stackoverflow.com/questions/55988709/how-can-i-add-labels-inside-the-points-in-a-scatterplot
